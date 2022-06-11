@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="" method="post">
+    {% csrf_token %}
+    NAME:
+    <input type="text" name="a1"><br><br>
+    AGE:
+    <input type="text" name="a2"><br><br>
+    COURSE:
+    <input type="text" name="a3"><br><br>
+     CENTRE:
+    <input type="text" name="a4"><br><br>
+    <input type="SUBMIT" value="CREATE">
+</form>
+{{data}}
+</body>
+</html>

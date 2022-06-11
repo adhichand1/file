@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <title>Title</title>
+</head>
+<body>
+<form method="post" action="insert">
+    {% csrf_token %}
+    <label>Enter roll</label>
+    <input type="text" name="n1"><br><br>
+
+    <label>Enter Name</label>
+    <input type=text" name="n2"><br><br>
+
+    <label>Enter Age</label>
+    <input type="text" name="n3"><br><br><br>
+    <input type="submit" value="insert">
+</form>
+<a href="next">Display</a>
+</body>
+</html>
+

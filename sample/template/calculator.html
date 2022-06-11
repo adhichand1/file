@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <script src="{% static 'cal.js' %}"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<form action="" method="post">
+    {% csrf_token %}
+    ENTER FIRST NO:
+    <input type="text" id="a1"><br><br>
+    ENTER SECOND NO:
+    <input type="text" id="a2"><br><br>
+    RESULT:
+    <input type="text" id="a3"><br><br>
+</form>
+    <button onclick="add()">ADD</button>
+    <button onclick="sub()">SUB</button>
+    <button onclick="mul()">MUL</button>
+    <button onclick="DIV()">DIV</button>
+    <button onclick="rem()">REM</button>
+
+
+</body>
+</html>

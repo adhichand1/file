@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    body{
+    background-image: url({% static 'a4.jpg' %});
+    }
+    </style>
+    </head>
+<body>
+
+<form action="" method="post">
+    {% csrf_token %}
+    <input type="text" name="n1">
+    <input type="submit" value="reverse"></form>
+{{data2}}
+</body>
+</html>
